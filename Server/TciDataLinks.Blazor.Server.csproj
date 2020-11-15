@@ -6,11 +6,23 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.0" />
+    <PackageReference Include="ValueInjecter" Version="3.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\AliaaCommon\AliaaCommon.Models\AliaaCommon.Models.csproj" />
+    <ProjectReference Include="..\..\..\AliaaCommon\AliaaCommon.Server\AliaaCommon.Server.csproj" />
+    <ProjectReference Include="..\..\..\AliaaCommon\AliaaCommon\AliaaCommon.csproj" />
+    <ProjectReference Include="..\..\..\EasyMongoNet\Definitions\EasyMongoNet.Definitions.csproj" />
+    <ProjectReference Include="..\..\..\EasyMongoNet\Driver2\EasyMongoNet.Driver2.csproj" />
+    <ProjectReference Include="..\..\TciCommon\TciCommon.Models\TciCommon.Models.csproj" />
+    <ProjectReference Include="..\..\TciCommon\TciCommon.Server\TciCommon.Server.csproj" />
     <ProjectReference Include="..\Client\TciDataLinks.Blazor.Client.csproj" />
     <ProjectReference Include="..\Shared\TciDataLinks.Blazor.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 
