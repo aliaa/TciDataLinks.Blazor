@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using EasyMongoNet;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace TciDataLinks.Blazor.Shared.Models
 {
-    public class ClientAuthUser
+    public class ClientAuthUser : MongoEntity
     {
         [Required]
         [Display(Name = "نام کاربری")]

@@ -15,7 +15,7 @@ using System.Text.Encodings.Web;
 using System.Text.Json.Serialization;
 using System.Text.Unicode;
 using System.Threading.Tasks;
-using TciCommon.Server;
+using TciDataLinks.Blazor.Server.Models;
 using TciDataLinks.Blazor.Shared.Models;
 
 namespace TciDataLinks.Blazor.Server.Configuration
@@ -77,7 +77,7 @@ namespace TciDataLinks.Blazor.Server.Configuration
             // configure db:
             var defaultConnection = Configuration.GetSection("DefaultConnection").Get<MongoConnectionSettings>();
             var customConnections = Configuration.GetSection("CustomConnections").Get<MongoConnectionSettings[]>();
-            services.FindModelsAndAddMongoCollections(new Assembly[] { Assembly.GetAssembly(typeof(Shared.Models.Permission)) },
+            services.FindModelsAndAddMongoCollections(new Assembly[] { Assembly.GetAssembly(typeof(ClientAuthUser)), Assembly.GetAssembly(typeof(AuthUserX)) },
                 defaultConnection, customConnections);
 
             services.Configure<IISServerOptions>(options =>
