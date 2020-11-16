@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TciDataLinks.Blazor.Server", "Server\TciDataLinks.Blazor.Server.csproj", "{DCBD9435-7746-4B01-8DBF-2757BEE08F54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TciDataLinks.Blazor.Server", "Server\TciDataLinks.Blazor.Server.csproj", "{DCBD9435-7746-4B01-8DBF-2757BEE08F54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TciDataLinks.Blazor.Client", "Client\TciDataLinks.Blazor.Client.csproj", "{6C72FDD8-45DA-4E27-9842-B2B07CF2C786}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TciDataLinks.Blazor.Client", "Client\TciDataLinks.Blazor.Client.csproj", "{6C72FDD8-45DA-4E27-9842-B2B07CF2C786}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TciDataLinks.Blazor.Shared", "Shared\TciDataLinks.Blazor.Shared.csproj", "{5BF8368B-B203-4D4F-A322-A0441A5D7403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TciDataLinks.Blazor.Shared", "Shared\TciDataLinks.Blazor.Shared.csproj", "{5BF8368B-B203-4D4F-A322-A0441A5D7403}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliaaCommon", "..\..\AliaaCommon\AliaaCommon\AliaaCommon.csproj", "{4486745F-3C65-4D06-995E-6CA1E3721CF9}"
 EndProject
