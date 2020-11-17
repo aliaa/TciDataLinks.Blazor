@@ -47,6 +47,15 @@
     private LoginVM model = new LoginVM();
     private bool unauthorized = false;
 
+    protected override async Task OnInitializedAsync()
+    {
+        if (state == "out")
+        {
+            var auth = (AuthStateProvider)_auth;
+            await auth.Logout();
+        }
+    }
+
     private async Task CheckLogin(EditContext editContext)
     {
         var auth = (AuthStateProvider)_auth;
